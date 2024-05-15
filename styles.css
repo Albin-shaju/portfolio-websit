@@ -2,20 +2,26 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #1a1a1a;
+    color: #fff;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #1a1a1a;
+    color: #00ffcc;
     text-align: center;
+    padding: 20px 0;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 80px #00ffcc;
+}
+
+header h1 {
+    font-size: 3em;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background: #444;
+    background: #333;
 }
 
 nav a {
@@ -23,15 +29,16 @@ nav a {
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    background: #555;
+    color: #00ffcc;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     overflow: hidden;
 }
 
@@ -42,20 +49,23 @@ nav a:hover {
 .section h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
 }
 
 .about, .projects, .contact {
-    background: #fff;
+    background: #333;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #1a1a1a;
+    color: #00ffcc;
     text-align: center;
     padding: 10px 0;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -67,4 +77,5 @@ footer {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
 }
