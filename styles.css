@@ -1,81 +1,89 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #f8f9fa;
+    color: #343a40;
 }
 
 header {
-    background: #1a1a1a;
-    color: #00ffcc;
+    background: #343a40;
+    color: #ffffff;
     text-align: center;
-    padding: 20px 0;
-    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc, 0 0 80px #00ffcc;
+    padding: 60px 0;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background: #333;
+    background: #495057;
 }
 
 nav a {
-    color: #fff;
-    padding: 14px 20px;
+    color: #ffffff;
+    padding: 15px 20px;
     text-decoration: none;
-    text-align: center;
-    transition: color 0.3s;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    color: #00ffcc;
+    background-color: #6c757d;
 }
 
 .container {
     width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
 .section {
-    padding: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .section h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #00ffcc;
-    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-}
-
-.about, .projects, .contact {
-    background: #333;
-    padding: 20px;
-    border-radius: 8px;
+    color: #495057;
     margin-bottom: 20px;
 }
 
-footer {
-    background: #1a1a1a;
-    color: #00ffcc;
-    text-align: center;
-    padding: 10px 0;
-    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.profile-pic {
+.about .profile-pic {
     display: block;
     margin: 0 auto 20px;
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+    border: 5px solid #343a40;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #343a40;
+}
+
+footer {
+    background: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
